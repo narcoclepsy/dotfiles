@@ -9,11 +9,11 @@ cp ~/.vimrc .vimrc.old
 # rm files
 echo "removing files"
 
-rm -rf .my.cnf
-rm -rf .profile
-rm -rf .vim
-rm -rf .vimdbext
-rm -rf .vimrc
+rm -rf ~/.my.cnf
+rm -rf ~/.profile
+rm -rf ~/.vim
+rm -rf ~/.vimdbext
+rm -rf ~/.vimrc
 # ln files
 echo "symlinking"
 ln -s ~/.my.cnf ~/dotfiles/.my.cnf
