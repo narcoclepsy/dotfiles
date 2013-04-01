@@ -21,5 +21,10 @@ ln -s ~/dotfiles/.profile ~/.profile
 ln -s ~/dotfiles/.vim ~/.vim 
 ln -s ~/dotfiles/.vimdbext ~/.vimdbext 
 ln -s ~/dotfiles/.vimrc ~/.vimrc 
+# init submodules
+git submodule add https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git submodule init
+git submodule update ~/.vim/bundle/vundle
 
+vim +BundleInstall +qall
 echo "done"

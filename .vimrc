@@ -34,7 +34,6 @@ set hidden                  " allow buffer nav without save
 set paste "let paste happen.
 
 " ctag stuff
-"set tags=/Users/jwatson/webroot/tricycle/php.tags
 " dynamic tag load
 set tags=./php.tags;/.
 filetype off                   " required!
@@ -57,11 +56,9 @@ Bundle 'NERD_tree-Project'
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'ack.vim'
-" Bundle 'ctrlp.vim'
 Bundle 'PIV'
 "Bundle 'Syntastic'
 Bundle 'joonty/vdebug.git'
-" Bundle 'minibufexpl.vim'
 Bundle 'dbext.vim'
 Bundle 'scratch.vim'
 Bundle 'surround.vim'
