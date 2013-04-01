@@ -1,11 +1,11 @@
 #!/bin/bash
 # backup files
 echo "copying existing files to .old"
-cp ~/.my.cnf my.cnf.old 
-cp ~/.profile .profile.old 
-cp -R ~/.vim .vim.old
-cp ~/.vimdbext .vimdbext.old 
-cp ~/.vimrc .vimrc.old 
+cp ~/.my.cnf ~/.my.cnf.old 
+cp ~/.profile ~/.profile.old 
+cp -R ~/.vim ~/.vim.old
+cp ~/.vimdbext ~/.vimdbext.old 
+cp ~/.vimrc ~/.vimrc.old 
 # rm files
 echo "removing files"
 
@@ -16,10 +16,10 @@ rm -rf ~/.vimdbext
 rm -rf ~/.vimrc
 # ln files
 echo "symlinking"
-ln -s ~/.my.cnf ~/dotfiles/.my.cnf
-ln -s ~/.profile ~/dotfiles/.profile
-ln -s ~/.vim ~/dotfiles/.vim
-ln -s ~/.vimdbext ~/dotfiles/.vimdbext
-ln -s ~/.vimrc ~/dotfiles/.vimrc
+ln -s ~/dotfiles/.my.cnf ~/.my.cnf 
+ln -s ~/dotfiles/.profile ~/.profile 
+ln -s ~/dotfiles/.vim ~/.vim 
+ln -s ~/dotfiles/.vimdbext ~/.vimdbext 
+ln -s ~/dotfiles/.vimrc ~/.vimrc 
 
 echo "done"
