@@ -1,0 +1,12 @@
+let pwd=getcwd()
+
+if match(pwd,'icpa') > 0
+  let g:dbext_default_profile_mysql= 'type=MYSQL:passwd=:dbname=icpa:extra=-t'
+endif
+" test line
+" select * from users where uid=1;
+
+if match(pwd,'tricycle') > 0
+  let g:dbext_default_profile_mysql= 'type=MYSQL:passwd=:dbname=tricycle:extra=-t'
+endif
+
