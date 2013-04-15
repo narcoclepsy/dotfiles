@@ -64,7 +64,10 @@ Bundle 'scratch.vim'
 Bundle 'surround.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-
+" Bundle 'AutoComplPop'
+" Bundle 'Conque-Shell'
+Bundle 'Tagbar'
+Bundle 'buffet.vim'
 
 
 autocmd BufRead *.thtml      set filetype=php
@@ -93,6 +96,13 @@ autocmd BufRead *.mako       set filetype=html
 "endif
 
 
+" simple recursive grep got this from https://github.com/fisadev/fisa-vim-config/blob/develop/.vimrc
+command! -nargs=1 RecurGrep lvimgrep /<args>/gj ./**/*.* | lopen | set nowrap
+command! -nargs=1 RecurGrepFast silent exec 'lgrep! <q-args> ./**/*.*' | lopen
+nmap ,R :RecurGrep 
+nmap ,r :RecurGrepFast 
+nmap ,wR :RecurGrep <cword><CR>
+nmap ,wr :RecurGrepFast <cword><CR>
 
 " Text formatting/layout
 set tabstop=4               " tabspacing
@@ -113,4 +123,6 @@ map <leader>ff :FufFile<CR>
 set nofoldenable            " no folding damnit!
 let g:DisableAutoPHPFolding = 1
 
+"omni case 
+let g:omni_syntax_ignorecase = 1
 source ~/.vimdbext
