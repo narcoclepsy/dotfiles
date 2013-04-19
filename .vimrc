@@ -52,10 +52,12 @@ Bundle 'tpope/vim-fugitive'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'FindInNERDTree'
-Bundle 'NERD_tree-Project'
+" Bundle 'NERD_tree-Project'
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'ack.vim'
+
+Bundle 'nerdtree-ack'
 Bundle 'PIV'
 "Bundle 'Syntastic'
 Bundle 'joonty/vdebug.git'
@@ -64,8 +66,6 @@ Bundle 'scratch.vim'
 Bundle 'surround.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-" Bundle 'AutoComplPop'
-" Bundle 'Conque-Shell'
 Bundle 'Tagbar'
 Bundle 'buffet.vim'
 
@@ -119,10 +119,12 @@ map <leader>ft :NERDTreeFind<CR>
 map <leader>xp :w !phpsh<CR>
 map <leader>fb :FufBuffer<CR>
 map <leader>ff :FufFile<CR>
-
+map <leader>b :Bufferlist<CR>
 set nofoldenable            " no folding damnit!
 let g:DisableAutoPHPFolding = 1
 
 "omni case 
 let g:omni_syntax_ignorecase = 1
+"tagbar
+nmap ,t :TagbarOpenAutoClose<CR>
 source ~/.vimdbext
